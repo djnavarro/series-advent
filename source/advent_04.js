@@ -3,7 +3,6 @@
 const {createCanvas, loadImage} = require('canvas')
 const seedrandom = require('seedrandom') 
 const fs = require('fs')
-const { randomBytes } = require('crypto')
 
 // generate an image using the seed
 function drawImage(seed) {
@@ -19,7 +18,7 @@ function drawImage(seed) {
     const iter = 1000   // iterations to add to image
 
     // create a canvas
-    // // https://github.com/Automattic/node-canvas
+    // https://github.com/Automattic/node-canvas
     var canvas = createCanvas(pixels, pixels)
     var ctx = canvas.getContext('2d')
 
